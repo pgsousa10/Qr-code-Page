@@ -1,0 +1,81 @@
+/*
+    - Font size (paragraph): 15px
+    - Mobile: 375px
+    - Desktop: 1440px 
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Branco: hsl(0, 0%, 100%);
+    --Cinza-claro: hsl(212, 45%, 89%);
+    --Azincentado-azul: hsl(220, 15%, 55%);
+    --Azul-escuro: hsl(218, 44%, 22%);
+}
+
+.container{
+    min-height: 100vh;
+    background-color: var(--Cinza-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: var(--Branco);    
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--Azincentado-azul);
+}
+
+img{
+    width: 275px;
+    border-radius: 10px;
+}
+
+main > p ,h1{
+    text-align: center;
+    font-family: Outfit;
+}
+
+main > h1{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 15px;
+    color: var(--Azul-escuro);
+}
+
+main > p{
+    font-size: 13px;
+    font-weight: 800;
+    padding: 0 10px;
+    color: var(--Azincentado-azul);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    background-color: var(--Azincentado-azul);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+a:hover{
+    background-color: var(--Cinza-claro);
+}
+
+footer{
+    font-size: 10px;
+    padding: 20px;
+    font-style: italic;
+}
